@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1300px)"
+      href="CSS/phone1.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:827px)"
+      href="CSS/phone2.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Website | Shreshth Shukla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="loader"></div>
+    <header></header>
+
+    <nav>
+      <!-- <a href="#"><img src="images/nameLogo.png" alt="" id="nameLogo" /></a> -->
+      <div id="nameLogo">
+        <a href="#"
+          ><h1><span>S</span>HRESHTH <span>S</span>HUKLA</h1></a
+        >
+      </div>
+      <ul id="nav-items">
+        <li onclick="closeMenu()"><a href="#">Home</a></li>
+        <li onclick="closeMenu()"><a href="#about">About</a></li>
+        <li onclick="closeMenu()"><a href="#skills">Skills</a></li>
+        <li onclick="closeMenu()"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menuIcon">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <section id="intro">
+      <div>
+        <h1 id="helloIntro">Hello,<span></span></h1>
+        <h1 id="myIntro">My Name is <span></span></h1>
+        <h1 id="nameIntro">Shreshth <span></span></h1>
+      </div>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/shreshth-shukla-9446a328b/"
+        >LinkedIn
+      </a>
+    </section>
+    <div class="main">
+      <section id="about">
+        <div id="about_phone">
+          <h1>ABOUT <span>ME</span></h1>
+          <h3>Front End Developer</h3>
+        </div>
+        <div id="about-pic">
+          <div id="about-pic-border">
+            <img src="images/about-pic.jpeg" alt="" />
+          </div>
+        </div>
+        <div id="about-content">
+          <h1>ABOUT <span>ME</span></h1>
+          <h3>Front End Developer</h3>
+          <p>
+            Hello! I'm Shreshth, a student at the Indian Institute of Technology
+            (IIT) Ropar, currently focused on frontend development. With a
+            strong foundation in programming languages such as C++ and Python,
+            I've been honing my skills to create engaging and responsive user
+            interfaces. Alongside my academic pursuits, I am also a professional
+            cricketer, proudly representing my college in various tournaments.
+            Balancing my passion for technology and sports has taught me
+            valuable lessons in discipline, teamwork, and perseverance. I am
+            always eager to connect with fellow tech enthusiasts and explore new
+            opportunities.
+          </p>
+        </div>
+      </section>
+      <section id="skills">
+        <h1>SK<span>I</span>LLS</h1>
+        <div id="skills-content">
+          <div id="skills-items">
+            <img id="hcj" src="images/hcj.png" />
+            <h2>WEB DEV</h2>
+            <p>
+              HTML, CSS, and Javascript. Skills required for front-end
+              development. Also have knowledge about TailwindCSS and Bootstrap.
+            </p>
+          </div>
+          <div id="skills-items">
+            <img id="react" src="images/react.png" />
+            <h2>REACT</h2>
+            <p>
+              Can create functionable webpages using React. Also have knowledge
+              about Node.js
+            </p>
+          </div>
+          <div id="skills-items">
+            <img id="python" src="images/python.png" />
+            <h2>PYTHON</h2>
+            <p>
+              Have strong foundation in Python programming language. Also have
+              knowledge about OOPs and Data Structures in Python.
+            </p>
+          </div>
+          <div id="skills-items">
+            <img id="cpp" src="images/c++.png" />
+            <h2>C++</h2>
+            <p>
+              Have a fundamental knowledge about C++ programming language.
+              Steadily building skills in OOPs and DSA.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1>CONTACT <span>ME</span></h1>
+        <div id="cntbox">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="4370e820-72c6-411a-b3bf-5c2259d9dc41"
+            />
+            <input
+              type="text"
+              name="name"
+              id="cntName"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Your Phone Number"
+              id="cntPhone"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Your Email"
+              id="cntEmail"
+              required
+            />
+            <textarea
+              name="message"
+              id=""
+              placeholder="Your Message"
+              rows="5"
+              cols="8"
+              id="cntMsg"
+              required
+            ></textarea>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <h1><span>S</span>HRESHTH <span>S</span>HUKLA</h1>
+        <h3>Connect with me on</h3>
+        <div id="links">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/shreshth.47?igsh=MWhzbmtwbTQ4NnB2Mw=="
+            ><img id="insta" src="images/insta.png" alt=""
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/joy.shukla.33633?mibextid=ZbWKwL"
+            ><img id="fb" src="images/fb.png" alt=""
+          /></a>
+        </div>
+        <p>Copyright &copy; 2024 Shreshth. All rights reserved</p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

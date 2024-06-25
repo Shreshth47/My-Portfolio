@@ -1,0 +1,57 @@
+nav{
+    right: 0;
+    margin-top: 20px;
+}
+nav #nameLogo  h1{
+    font-size: 25px;
+}
+#intro div{
+    margin-top: 28px;
+    margin-left: 20px;
+}
+#intro a{
+    text-align: center;
+    margin-left: 20px;
+}
+#about{
+    display: block;
+}
+#about-content{
+    width: auto;
+}
+#about-content h1, #about-content h3{
+    display: none;
+}
+#about-content p{
+    margin-top: 60px;
+    text-align: center;
+    margin-right: 30px;
+}
+#about_phone{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#about_phone h1{
+    font-size: 70px;
+}
+#about_phone h1 span{
+    color: #FF1C50;
+}
+#about_phone h3{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+#about-pic{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+#skills{
+    margin-top: 602px;
+}
+#cntbox form{
+    width: 100%;  
+    margin: 0px 20px; 
+}

@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+body{
+    background: black;
+}
+@font-face {
+    font-family: exo-extra-light;
+    src: url(Exo-ExtraLight.otf);
+}
+@font-face {
+    font-family: avengero;
+    src: url(AvengeroRegular-zvgl.ttf);
+}
+/* Loader page */
+#loader{
+    background:black url(images/loader2.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+.main{
+    background-color: transparent;
+}
+/* Navigation Bar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("images/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -10;
+}
+nav{
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+}
+nav #nameLogo  a{
+    text-decoration: none;
+}
+nav #nameLogo  h1{
+    color: white;
+    font-family: avengero;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+nav #nameLogo  h1 span{
+    color: #FF1C50;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-right: 60px;   
+}
+nav ul li{
+    padding: 10px;
+    margin: 10px;
+    padding-left: 35px;
+}
+/* transition-property
+   transition-duration
+   transition-timing function
+   transition-delay */
+
+/* animation-name
+   animation-duration
+   animation-timing-function
+   animation-delay
+   animation-iteration-count
+   animation-direction
+   animation-fill-mode*/
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    transition: all 0.5s;
+}
+nav ul li a:hover{
+    color: #FF1C50;
+}
+.menuIcon {
+    display: none;
+}
+.menuIcon i{
+    color: white;
+    margin-top: 24px;
+    font-size: 35px;
+}
+/* Intro section */
+#intro{
+    height: 98vh;
+}
+#intro div{
+    margin-top: 170px;
+    margin-left: 180px;
+    margin-bottom: 33px;
+}
+#intro h1{
+    color: transparent ;
+    font-size: 60px;
+    font-family: "Exo 2", sans-serif;
+    padding: 6px;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;   
+}
+#intro h1:nth-child(1){
+    animation-delay: 1s;
+}
+#intro h1:nth-child(2){
+    animation-delay: 2s;
+}
+#intro h1:nth-child(3){
+    animation: text_reveal_name 1s ease forwards;
+    animation-delay: 3s;
+}
+#intro a{
+    text-decoration: none;
+    color: transparent;
+    font-size: 51px;
+    font-family: "Oswald", sans-serif;
+    margin-left: 190px;
+    padding: 2px 47px;
+    border: 2px solid transparent;
+    animation: linkedin 2s ease forwards;
+    animation-delay: 4s;
+    transition: all 0.5s ease;   
+}
+#intro a:hover{
+    background: #b40000;
+}
+/* about section */
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;  
+    animation: viewani 1s ease;
+    animation-range: entry 0 cover 65% ;
+    animation-timeline: view();
+    height: 514px;   
+}
+#about_phone{
+    display: none;
+}
+#about-pic{
+     margin-top: 20px;
+}
+#about-pic-border{
+     border: 10px solid #FF1C50;
+     position: relative;
+     height: 450px;
+     width: 327px;
+}
+#about-pic img{
+    height: 450px;
+    width: auto;
+    position: absolute;
+    top: -50px;
+    left: 21px;
+    border: 10px solid black;
+}
+#about-content{
+    margin-left: 70px;
+    margin-top: -49px;
+    width: 800px;
+    font-family: exo-extra-light;
+}
+#about-content h1{
+    font-size: 70px;
+}
+#about-content h1 span{
+    color: #FF1C50;
+}
+#about-content h3{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+#about-content p{
+    padding-inline-end: 10px;
+    line-height: 30px;
+    font-family: "Quicksand", sans-serif;
+}
+/* skills section */
+#skills{
+    margin-top: 202px;
+    text-align: center;
+    color: white;
+    animation: viewani 1s ease;
+    animation-range: entry 0 cover 65% ;
+    animation-timeline: view();
+}
+#skills h1{
+    font-size: 70px;
+    font-family: exo-extra-light;
+}
+#skills h1 span{
+    color: #FF1C50;
+}
+
+#skills-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#skills-items{
+    background-image: url(images/skills-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    border-radius: 14px;
+    margin: 20px;
+    margin-top: 60px;
+    box-shadow: 0px 0px 10px 0 black;
+    transition: all 0.3s ease;
+}
+#skills-items:hover{
+    transform: translateY(-40px);
+    box-shadow: 0px 0px 6px 0 black;
+    img{
+        transform: scale(1.1);
+    }
+}
+#skills-items p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+#skills-items h2{
+    font-family: "Exo 2", sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+}
+#skills-items img{
+    transition: all 0.3s ease;
+}
+
+#hcj{
+    width: 250px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+#cpp{
+    width: 100px;
+    margin-top: 30px;
+}
+#react{
+    width: 100px;
+    margin-top: 30px;
+}
+#python{
+    width: 100px;
+    margin-top: 30px;
+}
+/* contact section */
+#contact{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: white;
+    animation: viewani 1s ease;
+    animation-range: entry 0 cover 65% ;
+    animation-timeline: view();
+}
+#contact h1{
+    font-size: 70px;
+    font-family: exo-extra-light;
+}
+#contact h1 span{
+    color: #FF1C50;
+}
+
+#cntbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+#cntbox form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 330px;
+    padding: 18px 18px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 13px white;
+}
+#cntbox form input,#cntbox form textarea{
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    margin-top: 7px;
+    background-color: #ededed;
+    transition: all 0.3s ease;
+    outline: solid 2px #e3e3e3;
+}
+#cntbox form input:focus, #cntbox form textarea:focus{
+    outline: #FF1C50 solid 2px;
+}
+#cntbox form button{
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+    color: white;
+    background-color: #f2033b;
+    margin-top: 10px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 10px;
+    border-radius: 12px;
+    border: solid #d60032 2px;
+    transition: all 0.3s ease;
+}
+#cntbox form button:hover{
+    background-color: #d60032;
+}
+/* footer section */
+footer{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 296px;
+    padding-top: 40px;
+    color: white;
+    border-top: 1px solid white;
+}
+footer h1 {
+    font-size: 40px;
+    font-family: avengero;
+}
+footer h1 span{
+    color:#FF1C50;
+}
+footer h3 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+footer a img{
+    filter: grayscale(3);
+    margin-top: 10px;
+    width: 45px;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+}
+footer a img:hover{
+    filter: grayscale(0);
+}
+footer p{
+    margin-top: 15px;
+}
+/* keyframes */
+@keyframes text_reveal {
+    100%{
+        color: white;
+    }   
+}
+@keyframes text_reveal_name {
+    100%{
+        color: #FF1C50;
+    }   
+}
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0;  
+    }  
+    100%{
+        width: 0;
+        left: 100%;
+    } 
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes viewani{
+    from{
+        scale: 0.3;
+    }
+    to{
+        scale: 1;
+    }
+}
+@keyframes linkedin {
+    from{
+        opacity: 0;
+        scale: 0.3;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        border: 2px solid #b40000;
+        color: white;
+    } 
+}
