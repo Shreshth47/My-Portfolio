@@ -15,6 +15,7 @@ nav #nameLogo  h1{
 }
 #about{
     display: block;
+    margin-top: ;
 }
 #about-content{
     width: auto;
@@ -49,7 +50,7 @@ nav #nameLogo  h1{
     margin-top: 40px;
 }
 #skills{
-    margin-top: 602px;
+    margin-top: 708px;
 }
 #cntbox form{
     width: 100%;  
