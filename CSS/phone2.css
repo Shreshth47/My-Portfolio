@@ -15,7 +15,7 @@ nav #nameLogo  h1{
 }
 #about{
     display: block;
-    margin-top: ;
+    margin-top: 0;
 }
 #about-content{
     width: auto;

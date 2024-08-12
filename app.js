@@ -1,3 +1,8 @@
+let mainBody=document.getElementById("mainBody")
+mainBody.style.display='none'
+window.addEventListener("load", ()=>{
+    mainBody.style.display="block";
+})
 let preloader=document.getElementById("loader")
 window.addEventListener("load", ()=>{
     preloader.style.display="none";
