@@ -7,7 +7,6 @@ let preloader=document.getElementById("loader")
 window.addEventListener("load", ()=>{
     preloader.style.display="none";
 })
-
 let menuList = document.getElementById('nav-items');
 menuList.style.maxHeight = '0px';
 
@@ -18,7 +17,6 @@ function toggleMenu(){
         menuList.style.maxHeight = '0px';
     }
 }
-
 function closeMenu(){
     menuList.style.maxHeight = '0px'
 }
